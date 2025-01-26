@@ -346,7 +346,7 @@ header {
 } 
 .testimonial{
   width: 75%;
-  margin: 0px auto 100pxF ;
+  margin: 0px auto 100px ;
   display: flex;
   flex-direction: column;
   gap: 30px;
