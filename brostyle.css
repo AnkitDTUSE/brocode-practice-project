@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -16,7 +17,6 @@ body {
   height: 10vh;
 }
 header {
-  
   margin: 0px auto;
   width: 70%;
   height: 100%;
@@ -246,7 +246,7 @@ header {
 }
 .holder {
   width: 40%;
-  margin: 0px auto 40px ;
+  margin: 0px auto 40px;
 }
 .head {
   margin: 20px 0px 40px 0px;
@@ -328,12 +328,12 @@ header {
   border-radius: 50%;
   width: 3rem;
 }
- .item:hover {
+.item:hover {
   transform: scale(1.06);
 }
 .item p:hover {
   color: rgb(44, 43, 43);
-} 
+}
 @keyframes rollin {
   0% {
     opacity: 0;
@@ -343,68 +343,244 @@ header {
     opacity: 100;
     transform: translateX(0);
   }
-} 
-.testimonial{
+}
+.testimonial {
   width: 75%;
-  margin: 0px auto 100px ;
+  margin: 0px auto 10px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.test_head{
+.test_head {
   display: flex;
   justify-content: center;
   font-family: "roboto";
   font-size: 1.5rem;
   color: grey;
 }
-.test_card{
+.test_card {
   display: flex;
   justify-content: center;
-  height:80%;
+  height: 80%;
 }
-.test_item{
+.test_item {
   width: 27%;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  height:13rem;
+  height: 13rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 10px ;
+  margin: 10px;
+  transition: all linear 0.1s 0s;
 }
-.test_item p{
+.test_item:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.test_item p {
   text-align: center;
-  padding:15px;
+  padding: 15px;
   color: rgb(53, 49, 49);
   font-size: 0.8rem;
   font-family: "roboto";
   margin: 0px 0px 5px 0px;
 }
-.test_img{
+.test_img {
   display: flex;
   justify-content: center;
   width: 20%;
   height: 25%;
-  margin:0px auto 0px auto ;
+  margin: 0px auto 0px auto;
 }
-.test_img img{
+.test_img img {
   width: 90%;
   height: 100%;
   border-radius: 50%;
 }
-.name{
+.name {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 5px auto;
 }
-#name{
+#name {
   font-family: "inter";
   color: blueviolet;
 }
-
-#desigg{
+#desigg {
   font-family: "open sans";
   font-weight: bold;
   font-size: 0.8rem;
+}
+.updates {
+  display: flex;
+  width: 50%;
+  height: 20rem;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.right_update {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.right_update img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.rg_para {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-family: "playwrite in";
+  border-radius: 10px 0px 0px 10px;
+  opacity: 0;
+  transition: all linear 0.4s 0s;
+}
+.rg_para:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.377);
+}
+.left_update {
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: start;
+  padding: 6rem 0px 0px 3rem;
+  background-color: rgba(128, 128, 128, 0.312);
+}
+.left_update h2 {
+  font-size: 2rem;
+  font-family: "inter";
+  color: rgba(0, 0, 255, 0.606);
+}
+.fp_email {
+  font-size: 0.8rem;
+  margin: 0px 10px;
+  font-family: "roboto";
+  color: rgb(80, 80, 80);
+}
+.email {
+  display: flex;
+  gap: 7px;
+  margin: 10px 0px;
+}
+.email_input {
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  width: 10rem;
+  height: 1.5rem;
+  justify-content: start;
+  align-items: center;
+  padding: 2px 15px;
+  margin: 0px 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.email_button {
+  font-weight: 10000;
+  background-color: rgba(0, 0, 255, 0.606);
+  color: white;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 9px;
+  transition: all linear 0.2s 0s;
+}
+.email_button:hover {
+  background-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sp_email {
+  font-size: 0.7rem;
+  margin: 0px 10px;
+  font-family: "roboto";
+  color: rgb(80, 80, 80);
+}
+.foot_sec {
+  display: flex;
+  margin: 0px auto;
+  width: 100%;
+  height: 20rem;
+  background-color: rgba(128, 128, 128, 0.235);
+}
+.foot_left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 12px;
+}
+.logo {
+  padding: 25px 0px 0px 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo h2 {
+  font-style: italic;
+  color: rgba(0, 0, 255, 0.485);
+  font-family: "inter";
+}
+.logo img {
+  border-radius: 50%;
+  width: 13%;
+  height: 90%;
+}
+.logo a {
+  text-decoration: none;
+}
+.foot_left p {
+  padding: 0px 70px;
+  margin: 0px 0px 10px 0px;
+  font-family: "open sans";
+  font-size: 0.8rem;
+  color: grey;
+}
+.foot_img {
+  padding: 0px 70px;
+  display: flex;
+  gap: 0.8rem;
+}
+.foot_img img {
+  width: 5%;
+}
+.foot_right {
+  width: 60%;
+  display: flex;
+}
+.aboutus {
+  padding: 40px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutus ul {
+  list-style-type: none;
+}
+.aboutus h3 {
+  font-family: "inter";
+}
+.aboutus a {
+  text-decoration: none;
+  color: grey;
+  font-size: 0.9rem;
+}
+.aboutus a:hover {
+  color: black;
+}
+.aboutus li {
+  margin: 1rem 0px;
+  text-decoration: none;
 }
