@@ -155,8 +155,8 @@ header {
   text-align: justify;
   width: 80%;
 }
-#p2::selection{
-  background-color:lightblue;
+#p2::selection {
+  background-color: lightblue;
 }
 .content_right {
   display: flex;
@@ -444,7 +444,11 @@ header {
   height: 20rem;
   margin: 0px auto 3rem auto;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: all linear 0.4s 0s;
+}
+.updates:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;    
 }
 .right_update {
   position: relative;
@@ -474,7 +478,7 @@ header {
 }
 .rg_para:hover {
   opacity: 1;
-  background-color: rgba(128, 128, 128, 0.377);
+  background-color: rgba(128, 128, 128, 0.274);
 }
 .left_update {
   border-radius: 0px 10px 10px 0px;
@@ -485,6 +489,10 @@ header {
   align-items: start;
   padding: 4rem 0px 0px 2rem;
   background-color: rgba(128, 128, 128, 0.312);
+  transition: all linear 0.4s 0s;
+}
+.left_update:hover {
+  background-color: rgba(128, 128, 128, 0.548);
 }
 .left_update h2 {
   font-size: 2rem;
