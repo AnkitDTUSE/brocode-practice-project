@@ -1,7 +1,12 @@
+/* fonts_by_gglfonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
+
+/* universal_styling */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +17,9 @@ body {
   flex-direction: column;
   gap: 40px;
 }
+
+/* navigation_bar_section */
+
 .navbar {
   width: 100vw;
   height: 10vh;
@@ -112,6 +120,9 @@ header {
     display: none;
   }
 }
+
+/* hero_section */
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -124,7 +135,7 @@ header {
   flex-direction: column;
   gap: 20px;
   padding: 0px 0px 0px 40px;
-  animation: rollin 1s ease forwards;
+  animation: rollin 1.5s ease forwards;
 }
 .content_left p {
   font-family: "inter";
@@ -143,6 +154,9 @@ header {
   font-size: 0.8rem;
   text-align: justify;
   width: 80%;
+}
+#p2::selection{
+  background-color:lightblue;
 }
 .content_right {
   display: flex;
@@ -188,6 +202,8 @@ header {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+/* company_info_section */
+
 .company_info {
   display: flex;
   flex-direction: column;
@@ -224,7 +240,7 @@ header {
 .gg,
 .ms,
 .li,
-.VE {
+.ve {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -232,12 +248,15 @@ header {
 .gg,
 .ms,
 .li,
-.VE span {
+.ve span {
   font-family: "inter";
   font-size: 0.8rem;
   font-weight: bold;
   color: grey;
 }
+
+/* card_section */
+
 .card_sec {
   box-shadow: rgba(0, 0, 0, 0.45) 0px -20px 20px -30px;
   width: 100vw;
@@ -344,6 +363,9 @@ header {
     transform: translateX(0);
   }
 }
+
+/* testimonial_section */
+
 .testimonial {
   width: 75%;
   margin: 0px auto 10px;
@@ -396,6 +418,7 @@ header {
   width: 90%;
   height: 100%;
   border-radius: 50%;
+  mix-blend-mode: color-burn;
 }
 .name {
   display: flex;
@@ -412,11 +435,14 @@ header {
   font-weight: bold;
   font-size: 0.8rem;
 }
+
+/* Update_section */
+
 .updates {
   display: flex;
   width: 50%;
   height: 20rem;
-  margin: 0px auto;
+  margin: 0px auto 3rem auto;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
@@ -457,7 +483,7 @@ header {
   flex-direction: column;
   gap: 3px;
   align-items: start;
-  padding: 6rem 0px 0px 3rem;
+  padding: 4rem 0px 0px 2rem;
   background-color: rgba(128, 128, 128, 0.312);
 }
 .left_update h2 {
@@ -469,7 +495,7 @@ header {
   font-size: 0.8rem;
   margin: 0px 10px;
   font-family: "roboto";
-  color: rgb(80, 80, 80);
+  color: rgba(80, 80, 80, 0.575);
 }
 .email {
   display: flex;
@@ -506,8 +532,11 @@ header {
   font-size: 0.7rem;
   margin: 0px 10px;
   font-family: "roboto";
-  color: rgb(80, 80, 80);
+  color: rgba(80, 80, 80, 0.752);
 }
+
+/* footer_section */
+
 .foot_sec {
   display: flex;
   margin: 0px auto;
@@ -525,7 +554,6 @@ header {
   padding: 25px 0px 0px 50px;
   display: flex;
   align-items: center;
-  gap: 5px;
 }
 .logo h2 {
   font-style: italic;
@@ -536,6 +564,7 @@ header {
   border-radius: 50%;
   width: 13%;
   height: 90%;
+  mix-blend-mode: color-burn;
 }
 .logo a {
   text-decoration: none;
@@ -551,9 +580,11 @@ header {
   padding: 0px 70px;
   display: flex;
   gap: 0.8rem;
+  mix-blend-mode: color-burn;
 }
 .foot_img img {
   width: 5%;
+  mix-blend-mode: color-burn;
 }
 .foot_right {
   width: 60%;
@@ -575,7 +606,8 @@ header {
 .aboutus a {
   text-decoration: none;
   color: grey;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-family: "roboto";
 }
 .aboutus a:hover {
   color: black;
@@ -583,4 +615,94 @@ header {
 .aboutus li {
   margin: 1rem 0px;
   text-decoration: none;
+}
+
+/* media queries */
+
+@media (max-width: 1413px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 730px) {
+  .item p {
+    font-size: 0.3rem;
+  }
+}
+@media (max-width: 1330px) {
+  .content_left {
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon_holder {
+    width: 20%;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon_holder img {
+    width: 40%;
+  }
+  .gg,
+  .ms,
+  .li,
+  .ve {
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+  }
+  .ve span {
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .content_left {
+    width: 100%;
+  }
+}
+@media (max-width: 1340px) {
+  .test_card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .test_item {
+    width: 50%;
+  }
+  .test_item p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 1090px) {
+  .update {
+    flex-direction: column;
+  }
+  .left_update,
+  .right_update {
+    width: 200%;
+  }
+  .left_update {
+    padding: 1rem;
+  }
+  .email {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email_button,
+  .email_input {
+    width: 50%;
+  }
 }
